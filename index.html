@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DréLuiz | Portfólio</title>
+
+  <meta name="description" content="Portfólio de Dré Luiz — desenvolvedor web especializado em interfaces modernas, automação de processos e sistemas web funcionais." />
+  <meta name="theme-color" content="#2e3440" />
+
+  <meta property="og:title" content="DréLuiz | Portfólio" />
+  <meta property="og:description" content="Interfaces modernas, automação e sistemas web limpos e profissionais." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="src/images/profile.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="src/styles/style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Ir para início">
+        <span class="brand-icon">{<span class="brand-d">D</span><span class="brand-l">L</span>}</span>
+        <span class="brand-name">Dré<span>Luiz</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#portfolio" class="nav-link">Portfólio</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="header-end">
+        <div class="header-social">
+          <a href="https://github.com/andrevloper" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dresantos88/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="https://wa.me/61991597263" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <a href="mailto:andrejsluiz@gmail.com" aria-label="E-mail">
+            <i class="ri-mail-line"></i>
+          </a>
+        </div>
+
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema" type="button">
+          <i class="ri-sun-line" id="theme-icon"></i>
+        </button>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav"
+          type="button"
+        >
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero observe-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">DESENVOLVIMENTO • AUTOMAÇÃO • INTERFACES</span>
+
+          <h1>Hello World<span>!</span></h1>
+
+          <p class="hero-typewriter"><span class="tw-prefix">// </span><span id="typewriter"></span><span class="tw-cursor">|</span></p>
+
+          <h2>Eu sou Dré Luiz e construo soluções web limpas, funcionais e bem apresentadas.</h2>
+
+          <p>
+            Trabalho com interfaces modernas, automação de processos, integrações e
+            sistemas que resolvem problemas reais com clareza, performance e boa usabilidade.
+          </p>
+
+          <p class="hero-about">
+            Meu foco é transformar ideias em experiências digitais organizadas,
+            profissionais e úteis no dia a dia.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#portfolio" class="main-btn">Ver portfólio</a>
+            <a href="#contact" class="ghost-btn">Falar comigo</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="src/images/profile.png" alt="Foto de Dré Luiz" loading="eager" />
+          </div>
+
+          <div class="floating-card float-code">
+            <i class="ri-code-s-slash-line"></i>
+          </div>
+
+          <div class="floating-card float-db">
+            <i class="ri-database-2-line"></i>
+          </div>
+
+          <div class="floating-card float-layout">
+            <i class="ri-layout-line"></i>
+          </div>
+
+          <div class="floating-card float-cloud">
+            <i class="ri-cloud-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-about observe-section">
+      <div class="container">
+        <span class="section-label">SOBRE</span>
+        <h2 class="section-title">Quem está por trás do código</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Desenvolvedor focado em construir soluções web funcionais, limpas e bem apresentadas.
+              Atuo em front-end, back-end e automação — sempre buscando entregar sistemas que resolvem
+              problemas reais com clareza e performance.
+            </p>
+            <p>
+              Do React ao Django, do PowerShell ao .NET, transito entre stacks com naturalidade.
+              Gosto de ambientes onde design e lógica andam juntos, e onde o código entrega valor de verdade.
+            </p>
+            <div class="about-stack">
+              <span><i class="ri-window-line"></i> Frontend</span>
+              <span><i class="ri-server-line"></i> Backend</span>
+              <span><i class="ri-robot-2-line"></i> Automação</span>
+              <span><i class="ri-gamepad-line"></i> Game Dev</span>
+            </div>
+          </div>
+
+          <div class="about-timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">Full Stack</span>
+                <h4>Interfaces + APIs</h4>
+                <p>React, Django e .NET — da tela até o banco de dados.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">Automação</span>
+                <h4>Scripts e integrações</h4>
+                <p>PowerShell e Python conectando sistemas e eliminando trabalho manual.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">Game Dev</span>
+                <h4>Godot + GDScript</h4>
+                <p>Desenvolvimento de jogos como projeto paralelo e passatempo criativo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-skills observe-section">
+      <div class="container">
+        <span class="section-label">SKILLS</span>
+        <h2 class="section-title">Tecnologias e áreas de atuação</h2>
+        <p class="section-text">
+          Ferramentas que uso para construir interfaces, sistemas, integrações e automações.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card"><i class="ri-html5-fill"></i><span>HTML</span></div>
+          <div class="skill-card"><i class="ri-css3-fill"></i><span>CSS</span></div>
+          <div class="skill-card"><i class="ri-javascript-fill"></i><span>JavaScript</span></div>
+          <div class="skill-card"><i class="ri-reactjs-line"></i><span>React</span></div>
+          <div class="skill-card"><i class="ri-smartphone-line"></i><span>React Native</span></div>
+          <div class="skill-card"><i class="ri-code-s-slash-line"></i><span>Python</span></div>
+
+          <div class="skill-card"><i class="ri-server-line"></i><span>Django</span></div>
+          <div class="skill-card"><i class="ri-terminal-window-line"></i><span>PowerShell</span></div>
+          <div class="skill-card"><i class="ri-hashtag"></i><span>C#</span></div>
+          <div class="skill-card"><i class="ri-braces-line"></i><span>.NET</span></div>
+          <div class="skill-card"><i class="ri-plug-2-line"></i><span>APIs REST</span></div>
+          <div class="skill-card"><i class="ri-database-2-fill"></i><span>Banco de Dados</span></div>
+
+          <div class="skill-card"><i class="ri-github-fill"></i><span>Git / GitHub</span></div>
+          <div class="skill-card"><i class="ri-tools-fill"></i><span>UI / UX</span></div>
+          <div class="skill-card"><i class="ri-robot-2-fill"></i><span>Automação</span></div>
+          <div class="skill-card"><i class="ri-global-line"></i><span>Sistemas Web</span></div>
+          <div class="skill-card"><i class="ri-gamepad-line"></i><span>Godot</span></div>
+          <div class="skill-card"><i class="ri-code-box-line"></i><span>GDScript</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section observe-section">
+      <div class="container">
+        <span class="section-label">PORTFÓLIO</span>
+        <h2 class="section-title">Soluções em destaque</h2>
+        <p class="section-text portfolio-subtitle">
+          Projetos apresentados de forma direta: imagem, nome, descrição e tecnologias usadas.
+        </p>
+
+        <div class="portfolio-grid">
+          <article class="project-card" data-link="https://github.com/andrevloper" tabindex="0" role="link" aria-label="Abrir projeto Termidesk">
+            <div class="project-image">
+              <img src="src/images/projeto1.png" alt="Projeto Termidesk" loading="lazy" />
+              <div class="project-overlay">
+                <span class="project-overlay-btn"><i class="ri-external-link-line"></i> Ver projeto</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Termidesk</h3>
+              <p>
+                Interface com identidade terminal para centralizar ações rápidas,
+                tarefas internas e rotinas automatizadas com visual forte e prático.
+              </p>
+              <div class="project-tags">
+                <span>Automação</span>
+                <span>Dashboard</span>
+                <span>UI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-link="https://github.com/andrevloper" tabindex="0" role="link" aria-label="Abrir projeto Dashboard AI">
+            <div class="project-image">
+              <img src="src/images/projeto2.png" alt="Projeto Dashboard AI" loading="lazy" />
+              <div class="project-overlay">
+                <span class="project-overlay-btn"><i class="ri-external-link-line"></i> Ver projeto</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Dashboard AI</h3>
+              <p>
+                Painel moderno para leitura de indicadores, acompanhamento de métricas
+                e visualização clara de dados com foco em tomada de decisão.
+              </p>
+              <div class="project-tags">
+                <span>Analytics</span>
+                <span>IA</span>
+                <span>Frontend</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-link="https://github.com/andrevloper" tabindex="0" role="link" aria-label="Abrir projeto Landscape The Same Band">
+            <div class="project-image">
+              <img src="src/images/projeto3.png" alt="Site The Same Band" loading="lazy" />
+              <div class="project-overlay">
+                <span class="project-overlay-btn"><i class="ri-external-link-line"></i> Ver projeto</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Landscape The Same Band</h3>
+              <p>
+                Estrutura de backend organizada para autenticação, controle de rotas,
+                serviços e integração com aplicações web modernas.
+              </p>
+              <div class="project-tags">
+                <span>Backend</span>
+                <span>API</span>
+                <span>Web App</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-link="https://github.com/andrevloper" tabindex="0" role="link" aria-label="Abrir projeto Portfólio Responsivo">
+            <div class="project-image">
+              <img src="src/images/projeto1.png" alt="Projeto Portfólio Responsivo" loading="lazy" />
+              <div class="project-overlay">
+                <span class="project-overlay-btn"><i class="ri-external-link-line"></i> Ver projeto</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Portfólio Responsivo</h3>
+              <p>
+                Página pensada para apresentação profissional, com boa hierarquia visual,
+                leitura clara e adaptação para diferentes telas.
+              </p>
+              <div class="project-tags">
+                <span>Landing Page</span>
+                <span>UI</span>
+                <span>Responsivo</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section observe-section">
+      <div class="container">
+        <div class="contact-header">
+          <span class="section-label">CONTATO</span>
+          <h2 class="section-title">Vamos construir algo clean e profissional</h2>
+          <p class="section-text">
+            Me envie uma mensagem com sua ideia, necessidade ou projeto.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3>Fale comigo</h3>
+            <p>
+              Posso te ajudar com portfólio, site institucional, landing page,
+              sistema web, integração com APIs e automação.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <i class="ri-mail-line"></i>
+                <span>andrejsluiz@gmail.com</span>
+              </div>
+
+              <div class="contact-info-item">
+                <i class="ri-github-line"></i>
+                <span>github.com/andrevloper</span>
+              </div>
+
+              <div class="contact-info-item">
+                <i class="ri-linkedin-line"></i>
+                <span>linkedin.com/in/dresantos88/</span>
+              </div>
+
+              <div class="contact-info-item">
+                <i class="ri-whatsapp-line"></i>
+                <a href="https://wa.me/61991597263" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="form-honeypot"><label>Não preencha: <input name="bot-field" /></label></p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" autocomplete="name" />
+                <span class="form-error-msg">Informe seu nome.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" />
+                <span class="form-error-msg">Informe um e-mail válido.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input type="text" id="subject" name="subject" placeholder="Sobre o que você quer falar?" />
+              <span class="form-error-msg">Informe o assunto.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" placeholder="Escreva sua mensagem"></textarea>
+              <span class="form-error-msg">Escreva sua mensagem.</span>
+            </div>
+
+            <button type="submit" class="main-btn">Enviar mensagem</button>
+
+            <div class="form-success" aria-live="polite">
+              <i class="ri-checkbox-circle-line"></i>
+              <h3>Mensagem enviada!</h3>
+              <p>Em breve entrarei em contato. Obrigado!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand" aria-label="Voltar ao topo">
+        <span class="brand-icon">{<span class="brand-d">D</span><span class="brand-l">L</span>}</span>
+        <span class="brand-name">Dré<span>Luiz</span></span>
+      </a>
+
+      <p class="footer-copy">© 2026 DréLuiz · Feito com HTML, CSS e JavaScript</p>
+
+      <nav class="footer-links" aria-label="Rodapé">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo" type="button">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="src/javascript/script.js"></script>
+</body>
+</html>
